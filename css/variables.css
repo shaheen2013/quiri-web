@@ -6,7 +6,7 @@
   --primary-btn-color: #fd0044;
   --secondary-btn-color: #7c69ef;
   --violate-50: #eeefff;
-  --violet-300: #A6A7FB;
+  --violet-300: #a6a7fb;
   --violate-500: #7c69ef;
   --gray-50: #f9fafb;
   --gray-100: #f2f4f7;
@@ -19,4 +19,8 @@
   --dark: #101828;
   --light-text-primary: rgba(58, 53, 65, 0.87);
   --primary-p-900: #22366a;
+  --edit-bg: #ecfdf3;
+  --edit-text-color: #12b76a;
+  --delete-bg: #fde8e8;
+  --delete-text-color: #e02424;
 }
