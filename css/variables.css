@@ -1,0 +1,22 @@
+:root {
+  --font-family: "Rubik", sans-serif;
+  --primary-color: #ffffff;
+  --white-color: #fff;
+  --gray-200-color: #eaecf0;
+  --primary-btn-color: #fd0044;
+  --secondary-btn-color: #7c69ef;
+  --violate-50: #eeefff;
+  --violet-300: #A6A7FB;
+  --violate-500: #7c69ef;
+  --gray-50: #f9fafb;
+  --gray-100: #f2f4f7;
+  --gray-200: #eaecf0;
+  --gray-300: #d0d5dd;
+  --gray-400: #98a2b3;
+  --gray-500: #667085;
+  --gray-600: #475467;
+  --gray-700: #344054;
+  --dark: #101828;
+  --light-text-primary: rgba(58, 53, 65, 0.87);
+  --primary-p-900: #22366a;
+}

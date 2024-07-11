@@ -1,0 +1,14 @@
+/* FONTS */
+@import url("./fonts.css");
+
+/* VARIABLE */
+@import url("./variables.css");
+
+/* COMPONENTS */
+@import url("./components/header.css");
+@import url("./components/auth-form.css");
+/* @import url('./components/secondary-header.css'); */
+@import url("./components/sidebar.css");
+
+/* MAIN CSS */
+@import url("./main.css");

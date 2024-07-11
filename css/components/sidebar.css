@@ -1,0 +1,110 @@
+.dashboard-container {
+  display: flex;
+  min-height: 100vh;
+  /* position: relative; */
+}
+
+.sidebar {
+  width: 312px;
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  background-color: var(--white-color);
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+.sidebar .sidebar-header {
+  max-width: 170px;
+  max-height: 56px;
+}
+
+.navigation-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.navigation-list .navigation-item {
+  padding: 12px 16px;
+}
+
+.navigation-list .navigation-item a {
+  color: var(--gray-600);
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.navigation-list .navigation-item:hover {
+  background: var(--violate-50) !important;
+  border-radius: 8px;
+  color: var(--violate-500);
+}
+.navigation-list .navigation-item a:hover {
+  color: var(--violate-500);
+}
+
+/* Accrodient */
+.accordion-item {
+  border: 0;
+}
+
+.accordion-collapse .collapse {
+  background: var(--gray-50);
+}
+
+ .accordion-button:focus {
+  z-index: 3;
+  outline: 0;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-accordion-active-color);
+  background-color: var(--gray-50) !important;
+  border-radius: 8px 8px 0px 0px;
+
+  box-shadow: none;
+}
+
+.sidebar .accordion-collapse .navigation-item:not(.collapsed) {
+  background-color: var(--gray-50);
+  border-radius: 0 0 8px 8px;
+}
+
+.accordion-item > .accordion-header .accordion-button {
+  color: var(--gray-600);
+  font-family: var(--font-family);
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  border-radius: 8px 8px 0px 0px;
+}
+
+.sidebar .accordion-collapse .nested-item:not(.collapsed) {
+  background-color: var(--gray-50);
+  /* border-radius: 0 0 8px 8px; */
+  padding: 12px 16px;
+  display: block;
+  padding-left: 40px;
+  color: var(--gray-600);
+}
+
+.sidebar .accordion-collapse .nested-item:last-child {
+  border-radius: 0 0 8px 8px;
+}
+
+.sidebar .accordion-collapse .nested-item:hover,
+.sidebar .accordion-item .accordion-header button:hover {
+  background: var(--violate-50) !important;
+  border-radius: 8px;
+  color: var(--violate-500);
+}
