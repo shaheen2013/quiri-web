@@ -16,8 +16,11 @@
   --gray-500: #667085;
   --gray-600: #475467;
   --gray-700: #344054;
+  --gray-900: #101828;
   --dark: #101828;
+  --light-1: #dedede;
   --light-text-primary: rgba(58, 53, 65, 0.87);
+  --light-dark: rgba(16, 24, 40, 0.8);
   --primary-p-900: #22366a;
   --edit-bg: #ecfdf3;
   --edit-text-color: #12b76a;

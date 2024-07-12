@@ -44,11 +44,12 @@ body {
   color: var(--white-color);
   font-family: var(--font-family);
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 500;
   line-height: 24px;
   border-radius: 8px;
-  width: 100%;
-  letter-spacing: 2px;
+  /* width: 100%; */
+  min-width: fit-content;
+  /* letter-spacing: 2px; */
 }
 
 .primary-btn:hover {
@@ -734,4 +735,189 @@ table tr:nth-child(even) {
 .model-check .form-check-input:checked {
   background-color: var(--violate-500);
   border-color: var(--violate-500);
+}
+
+/*================================================
+               USER PROFILE PAGE 
+ ===============================================*/
+
+.user-profile .personal-info-photo {
+  width: 120px;
+  height: 120px;
+  position: relative;
+}
+
+.user-profile .personal-info-photo img {
+  border-radius: 74px;
+}
+
+.user-profile .personal-info-photo .personal-info-photo-edit-btn {
+  color: var(--white-color);
+  background: var(--light-dark);
+  backdrop-filter: blur(2px);
+  position: absolute;
+  border-radius: 8px;
+  left: 50%;
+  bottom: 15px;
+  transform: translate(-50%);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.user-profile .personal-info-photo .personal-info-photo-edit-btn img {
+}
+
+.user-info-form input {
+  background-color: var(--gray-500) !important;
+}
+
+.user-info-form .user-info-form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.user-info-form-btn button {
+  /* max-width: 300px !important; */
+}
+
+.user-profile input[type="email"],
+.user-profile input[type="text"],
+.user-profile input[type="password"] {
+  background: var(--gray-50) !important;
+  border-radius: 8px !important;
+}
+
+.password-field .password-field-remove-eye {
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-right: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .user-info-form-btn button {
+    max-width: 100% !important;
+  }
+}
+
+/* ==========================================
+              DASHBOARD - Personal Info
+==============================================*/
+
+.dashboard-block {
+  border-radius: 12px;
+  border: 1px solid var(--gray-300);
+  padding: 24px;
+}
+
+.dashboard-block .dashboard-block-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.dashboard-block .dashboard-block-header .dashboard-block-header-icon {
+  padding: 8px;
+  background: var(--violate-50);
+  border-radius: 8px;
+}
+
+.dashboard-block .dashboard-block-header h1 {
+  color: var(--dark);
+  font-family: var(--font-family);
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 48px;
+  margin: 0;
+}
+
+.dashboard-top-user-info {
+  padding: 0 16px;
+}
+
+.dashboard-top-user-info-card {
+  background: var(--gray-50);
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.dashboard-top-user-info-card p {
+  color: var(--gray-600);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+.dashboard-top-user-info-card h4 {
+  color: var(--dark);
+  font-family: var(--font-family);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.dashboard-content-box .top-view-all-btn {
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--dark);
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  outline: none;
+  padding: 8px 12px;
+  background: transparent;
+  border: 1px solid var(--light-1);
+}
+
+/* dashboard-content-box Accordion */
+.dashboard-content-box .accordion .accordion-item button {
+  color: var(--dark);
+  font-family: var(--font-family);
+  font-size: 16px !important;
+  font-weight: 400;
+  line-height: 24px;
+  background: var(--gray-50) !important;
+  margin-top: 8px;
+  border-radius: 8px !important;
+}
+
+.dashboard-block th:last-child {
+  text-align: center;
+}
+
+.dashboard-block td:last-child {
+  justify-content: flex-end;
+}
+
+.dashboard-block td button {
+  padding: 4px 6px;
+  align-items: cente;
+}
+
+.dashboard-block td,
+.dashboard-block th {
+  text-wrap: nowrap;
+}
+
+.dashboard-block ::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.dashboard-block ::-webkit-scrollbar-track {
+  background: var(--gray-200);
+  border-radius: 10px;
+}
+
+.dashboard-block ::-webkit-scrollbar-thumb {
+  background-color: var(--gray-400);
+  border-radius: 10px;
 }
