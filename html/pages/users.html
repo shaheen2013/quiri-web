@@ -19,6 +19,10 @@
       crossorigin="anonymous"
       defer
     ></script>
+    <!-- select2 Dropdown -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 
     <script src="../../js/script.js" defer></script>
   </head>
@@ -241,14 +245,120 @@
                   />
                 </div>
               </div>
+
               <div class="">
-                <button class="btn primary-btn d-flex gap-2 align-items-center">
+                <button class="btn primary-btn d-flex gap-2 align-items-center" data-bs-toggle="modal" data-bs-target="#exampleModal">
                   <img src="/assets/images/circle-plus-white.svg" alt="icon" />
                   <span>Create User</span>
                 </button>
               </div>
             </div>
 
+            <!--  Create User Modal -->
+            <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered " >
+                <div class="modal-content" >
+                  <div class="modal-body">
+                    <h2 class="form-box-title">Create User</h2>
+                    <form action="" method="post" enctype="multipart/form-data">
+                      
+                        <div class="mb-3 font-weight-bold">
+                          <label for="exampleFormControlInput1" class="form-label"
+                            >Name*
+                          </label>
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Enter full name"
+                          />
+                        </div>
+                        <div class="mb-3 font-weight-bold">
+                          <label for="exampleFormControlInput1" class="form-label" 
+                            >Email* 
+                          </label>
+                          <input
+                            type="email"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Enter your email"
+                            required
+                          />
+                        </div>
+
+                        <div class="mb-3 font-weight-bold">
+                          <label for="exampleFormControlInput1" class="form-label"
+                            >Password*</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Enter Password"
+                            required
+                          />
+                        </div>
+
+                        <div class="mb-3 font-weight-bold">
+                          <label for="exampleFormControlInput1" class="form-label"
+                            >Confirm Password*</label
+                          >
+                          <input
+                            type="password"
+                            class="form-control"
+                            id="exampleFormControlInput1"
+                            placeholder="Enter Password"
+                            required
+                          />
+                        </div>
+                        <div class="mb-3 font-weight-bold">
+                          <label for="exampleFormControlInput1" class="form-label"
+                            >Role*</label
+                          >
+                          <select class="js-example-basic-single" name="state">
+                            <option value="AL">Alabama</option>
+                              ...
+                            <option value="WY">Wyoming</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 font-weight-bold">
+                          <label for="exampleFormControlInput1" class="form-label"
+                            >Associate Model*</label
+                          >
+                          <select class="js-example-basic-single"  name="state">
+                            <option value="AL">Alabama</option>
+                              ...
+                            <option value="WY">Wyoming</option>
+                          </select>
+                        </div>
+
+                        <div class="mb-3 font-weight-bold">
+                          <label for="exampleFormControlInput1" class="form-label"
+                            >Default Model*</label
+                          >
+                          <select class="js-example-basic-single"  name="state">
+                            <option value="AL">Alabama</option>
+                              ...
+                            <option value="WY">Wyoming</option>
+                          </select>
+                        </div>
+                        <div class="mb-3">
+                          <label for="formFile" class="form-label py-1">Image</label>
+                          <input class="form-control" type="file" id="formFile" >
+                        </div>
+                  </form>
+                  <div class="d-flex gap-3">
+                    <button  class="primary-btn bg-white text-black border border-gray w-50" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                    <button type="submit" class="primary-btn w-50">Create</button>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            
             <!-- table -->
             <section class="user-table border rounded-3 my-3">
               <div  style="height: 696px" class="user-table-scroll overflow-y-auto">
@@ -765,4 +875,20 @@
       </div>
     </div>
   </body>
+  <script>$(document).ready(function() {
+    $('.js-example-basic-multiple').select2(
+      {
+        dropdownParent: $('#exampleModal')
+    }
+    );
+
+    
+    });
+
+    $(document).ready(function() {
+        $('.js-example-basic-single').select2({
+        dropdownParent: $('#exampleModal')
+    });
+    });
+  </script>
 </html>
