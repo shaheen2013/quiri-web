@@ -227,7 +227,7 @@
           <div>
             <div class="top-title-sec d-flex align-items-center gap-2">
               <div class="">
-                <h1 class="">All User</h1>
+                <h1 class="">Models</h1>
               </div>
               <div class="flex-grow-1"></div>
               <!-- search input -->
@@ -244,478 +244,559 @@
               <div class="">
                 <button class="btn primary-btn d-flex gap-2 align-items-center">
                   <img src="/assets/images/circle-plus-white.svg" alt="icon" />
-                  <span>Create User</span>
+                  <span>Create Model</span>
                 </button>
               </div>
             </div>
 
             <!-- table -->
             <section class="user-table border rounded-3 my-3">
-              <div  style="height: 696px" class="user-table-scroll overflow-y-auto">
+              <div
+                style="height: 696px"
+                class="user-table-scroll overflow-y-auto"
+              >
                 <table class="data-table">
                   <thead>
                     <tr>
                       <th>No</th>
-                      <th>Image</th>
                       <th>Name</th>
-                      <th>Email</th>
+                      <th>Host Protocol</th>
+                      <th>Host</th>
+                      <th>Port</th>
+                      <th>Status</th>
                       <th>Action</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
                       <td>1</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Jenny Wilson</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Jenny Wilson</td>
-                      <td>jenny.wilson@example.com</td>
                       <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>2</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Robert Fox</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Robert Fox</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td class="d-flex gap-2 align-items-center">
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>3</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
-                          />
-                        </div>
-                      </td>
                       <td>Savannah Nguyen</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td class="d-flex gap-2 align-items-center">
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
+                          />
+                        </div>
+                      </td>
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edit-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
                     <tr>
                       <td>4</td>
-                      <td class="user-img-td">
-                        <div class="user-img">
-                          <img
-                            class="w-100 h-100 object-fit-cover"
-                            src="/assets/images/user-img.png"
-                            alt="img"
+                      <td>Courtney Henry</td>
+                      <td>HTTP</td>
+                      <td>192.11.22.33</td>
+                      <td>80</td>
+                      <td class="model-check">
+                        <div class="form-check  form-switch">
+                          <input
+                            class="form-check-input"
+                            type="checkbox"
+                            role="switch"
+                            id="flexSwitchCheckChecked"
+                            checked
                           />
                         </div>
                       </td>
-                      <td>Courtney Henry</td>
-                      <td>jenny.wilson@example.com</td>
-                      <td
-                        class="d-flex gap-2 align-items-center justify-content-end"
-                      >
+                      <td class="d-flex gap-3 align-items-center">
                         <button
-                          class="user-action-btn edit-btn d-flex align-items-center gap-2"
+                          class="models-action-btn watch-btn d-flex align-items-center gap-2"
                         >
-                          <img src="/assets/images/edit-icon.svg" alt="icon" />
-                          <span>Edit</span>
+                          <img src="/assets/images/watch-icon.svg" alt="icon" />
                         </button>
                         <button
-                          class="user-action-btn delete-btn d-flex align-items-center gap-2"
+                          class="models-action-btn edut-btn d-flex align-items-center gap-2"
+                        >
+                          <img src="/assets/images/edit-icon.svg" alt="icon" />
+                        </button>
+                        <button
+                          class="models-action-btn delete-btn d-flex align-items-center gap-2"
                         >
                           <img
                             src="/assets/images/delete-icon.svg"
                             alt="icon"
                           />
-                          <span>Delete</span>
                         </button>
                       </td>
                     </tr>
