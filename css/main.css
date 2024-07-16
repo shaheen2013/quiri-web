@@ -638,6 +638,7 @@ th {
 
 td {
   padding: 16px !important;
+  
 }
 
 th:first-child {
@@ -676,6 +677,8 @@ table tr:nth-child(even) {
 .user-table td:last-child {
   justify-content: flex-end;
 }
+
+
 
 .user-action-btn {
   font-family: var(--font-family);
@@ -735,6 +738,8 @@ table tr:nth-child(even) {
 .model-check .form-check-input:checked {
   background-color: var(--violate-500);
   border-color: var(--violate-500);
+  height: 20px;
+  width: 36px;
 }
 
 /*================================================
