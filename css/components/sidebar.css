@@ -118,6 +118,10 @@
   color: var(--violate-500);
 }
 
+.nested-item {
+  display: flex !important;
+}
+
 .nested-item img {
   margin-right: 8px;
 }
