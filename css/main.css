@@ -62,7 +62,8 @@ body {
   font-family: var(--font-family);
   font-size: 32px;
   font-weight: 500;
-  line-height: 48px; /* 150% */
+  line-height: 48px;
+  /* 150% */
 }
 
 .heading-mobile {
@@ -70,7 +71,8 @@ body {
   font-family: var(--font-family);
   font-size: 20px;
   font-weight: 500;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+  /* 150% */
 }
 
 .offcanvas-body {
@@ -109,14 +111,40 @@ input[type="text"]:focus {
   outline: 0;
 }
 
-.user-table 
+.user-table .role {
+  padding: 6px 16px;
+  border-radius: 16px;
+  text-align: center;
+  font-family: var(--font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+}
+
+.user-table .role.role-admin {
+  background: var(--blue-50);
+  color: var(--blue-700);
+}
+.user-table .role.role-manager {
+  background: var(--success-50);
+  color: var(--success-700);
+}
+.user-table .role.role-stuff {
+  background: var(--purple-50);
+  color: var(--purple-700);
+}
+
+
+
+
+
 
 /* =========================================
                BREADCRUMB 
 ============================================*/
 
 /* BREADCRUMB */
-.right-content .breadcrumb-item + .breadcrumb-item::before {
+.right-content .breadcrumb-item+.breadcrumb-item::before {
   content: url("/assets/images/chevron-up.svg");
   margin-top: 1.5px;
 }
@@ -142,8 +170,7 @@ input[type="text"]:focus {
 /* =======================================
           Main Accordion
 =========================================*/
-.accordion.accordion-flush.main-content-accordion {
-}
+.accordion.accordion-flush.main-content-accordion {}
 
 .main-content-accordion h1 {
   color: var(--dark);
@@ -253,6 +280,7 @@ input[type="text"]:focus {
   background: #ddd;
   color: var(--gray-700);
 }
+
 .text-box .text-box-btn-sec .text-box-btn-ask:hover {
   background: var(--violate-500);
   color: var(--white-color) !important;
@@ -372,6 +400,7 @@ input[type="text"]:focus {
 th:last-child {
   text-align: right;
 }
+
 td:last-child {
   text-align: right;
 }
@@ -400,11 +429,12 @@ table.table {
   border-top: 1px solid red !important;
 } */
 
-.table-striped > tbody > tr:nth-of-type(even) > * {
+.table-striped>tbody>tr:nth-of-type(even)>* {
   /* background: var(--gray-50); */
   /* background: #f9fafb;
   padding: 16px; */
 }
+
 /* .table-striped > tbody > tr:nth-of-type(odd) > * {
   padding: 16px;
 } */
@@ -418,23 +448,25 @@ table.table {
   padding: 10px;
 }
 
-.table-striped > thead > tr {
+.table-striped>thead>tr {
   padding: 100px !important;
 }
 
-.table-striped > thead > * {
+.table-striped>thead>* {
   --bs-table-color-type: #958b8b;
   --bs-table-bg-type: white;
   padding: 16px;
   border: none;
 }
-.table-striped > tbody > tr:nth-of-type(odd) > * {
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
   --bs-table-color-type: #958b8b;
   --bs-table-bg-type: white;
   padding: 16px;
   border: none;
 }
-.table-striped > tbody > tr:nth-of-type(even) > * {
+
+.table-striped>tbody>tr:nth-of-type(even)>* {
   --bs-table-color-type: #958b8b;
   --bs-table-bg-type: var(--gray-50);
   padding: 16px;
@@ -512,6 +544,7 @@ input[type="number"]::-webkit-outer-spin-button {
   margin: auto;
   margin-top: 100px;
 }
+
 .form-box-top-content {
   margin-bottom: 24px;
 }
@@ -582,7 +615,8 @@ input[type="number"]::-webkit-outer-spin-button {
   font-family: Inter;
   font-size: 16px;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
+  /* 150% */
 }
 
 /* OTP */
@@ -644,6 +678,7 @@ th:first-child {
   border-radius: 8px 0 0 0;
   padding: 16px;
 }
+
 th:last-child {
   border-radius: 0 8px 0 0;
   padding: 16px;
@@ -697,6 +732,11 @@ table tr:nth-child(even) {
 .delete-btn {
   background-color: var(--delete-bg);
   color: var(--delete-text-color);
+}
+
+.view-btn {
+  background: var(--violate-50);
+  color: var(--violate-500);
 }
 
 .user-table-scroll::-webkit-scrollbar {
@@ -765,8 +805,7 @@ table tr:nth-child(even) {
   gap: 8px;
 }
 
-.user-profile .personal-info-photo .personal-info-photo-edit-btn img {
-}
+.user-profile .personal-info-photo .personal-info-photo-edit-btn img {}
 
 .user-info-form input {
   background-color: var(--gray-500) !important;
@@ -853,6 +892,7 @@ table tr:nth-child(even) {
   margin: 0;
   margin-bottom: 8px;
 }
+
 .dashboard-top-user-info-card h4 {
   color: var(--dark);
   font-family: var(--font-family);

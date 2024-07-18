@@ -19,12 +19,19 @@
 .sidebar .sidebar-header {
   max-width: 170px;
   max-height: 56px;
+    
 }
+
+/* .sidebar-nav-wrapper {
+  height: 800px;
+  overflow-x: auto;
+  border: 1px solid red
+} */
 
 .navigation-list {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 4px;
 }
 
 .navigation-list .navigation-item {
@@ -64,9 +71,11 @@
   box-shadow: none;
 }
 
+
 .accordion-button:not(.collapsed) {
-  color: var(--bs-accordion-active-color);
-  background-color: var(--gray-50) !important;
+  /* color: var(--bs-accordion-active-color); */
+  /* background-color: var(--gray-50) !important; */
+  background: transparent !important;
   border-radius: 8px 8px 0px 0px;
 
   box-shadow: none;
@@ -108,3 +117,12 @@
   border-radius: 8px;
   color: var(--violate-500);
 }
+
+.nested-item img {
+  margin-right: 8px;
+}
+.nested-item span{
+  vertical-align: middle;
+}
+
+
